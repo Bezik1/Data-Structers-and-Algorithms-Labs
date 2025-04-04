@@ -1,0 +1,20 @@
+Input:
+go 10
+ld doc1
+link=12
+eod
+remi 0
+remi 1
+show
+ha
+
+Output:
+!go 10
+!ld doc1
+!remi 0
+error
+!remi 1
+error
+!show
+Document: doc1
+!ha

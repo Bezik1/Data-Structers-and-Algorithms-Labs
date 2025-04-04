@@ -1,0 +1,32 @@
+Input:
+go 5
+ld doc
+link=raBar8ar link=adsa link=dsa link=8 link=DSL
+eod
+show
+rem adsa
+remi 1
+show
+index 8
+ha
+
+Output:
+!go 5
+!ld doc
+!show
+Document: doc
+rabar8ar
+adsa
+dsa
+dsl
+!show
+!rem adsa
+true
+!remi 1
+dsa
+!show
+Document: doc
+rabar8ar
+dsl
+!ha
+END OF EXECUTION

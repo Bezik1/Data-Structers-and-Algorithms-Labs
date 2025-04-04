@@ -1,0 +1,44 @@
+Input:
+go 5
+ld doc1
+link=a link=b
+eod
+show
+ld doc2
+link=ab link=bc link=cd
+eod
+show
+index de
+index ab
+show
+clear
+show
+ha
+
+Output:
+!go 5
+!ld doc1
+!show
+Document: doc1
+ab
+bc
+!ld doc2
+!show
+Document: doc2
+ab
+bc
+cd
+!index de
+-1
+!index ab
+0
+!show:
+Document: doc2
+ab
+bc
+cd
+!clear
+!show
+Document: doc2
+!ha
+END OF EXECUTION
